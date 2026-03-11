@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<script>
+
+function mostrar(id){
+
+let seccion = document.getElementById(id);
+let sonido = document.getElementById("sonido");
+
+// reproducir sonido
+sonido.currentTime = 0;
+sonido.play();
+
+if(seccion.style.display === "block"){
+    seccion.style.display = "none";
+}else{
+    seccion.style.display = "block";
+}
+
+}
+
+</script>
+    
+
+<body>
+    <audio id="sonido">
+    <source src="pop.mp3" type="audio/mpeg">
+  </audio>
+
+
+    <div id="hojaDeVida">
+        </div>
+
+    <div class="name">
+        <div class="img">
+            <img src="FotoPerfil.JPG" alt="">
+        </div>
+        <div class="content"> 
+            <p class="p-1">Angie Paola Ciro Ocampo</p>
+            <p class="p-2">29 años, Bachiller</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="circulo personal" onclick="mostrar('personal')">Información personal</div>
+        <div class="circulo academica" onclick="mostrar('academica')">Formación académica</div>
+        <div class="circulo laboral" onclick="mostrar('laboral')">Experiencia laboral</div>
+        <div class="circulo habilidad" onclick="mostrar('habilidad')">Habilidades</div>
+        <div class="circulo antecedents" onclick="mostrar('antecedents')">Antecedentes</div>
+        <div class="circulo referens" onclick="mostrar('referens')">Referencias</div>
+    </div>
+
+</div>
+
+    <div id="personal" class="info">
+            <p class="tituloseccion">Información personal</p>
+            <p class="tituloinfo">Nombres y apellidos:</p>
+            <p class="infoInfo">Angie Paola Ciro Ocampo</p><br>
+            <p class="tituloinfo">Identificación:</p>
+            <p class="infoInfo">CC 1.044.932.839</p><br>
+            <p class="tituloinfo">Teléfono:</p>
+            <p class="infoInfo">300 496 3234</p><br>
+            <p class="tituloinfo">Correo electrónico:</p>
+            <p class="infoInfo">aciro3103@gmail.com</p><br>
+            <p class="tituloinfo">Lugar de residencia:</p>
+            <p class="infoInfo">Arjona Bolívar</p><br>
+            <div class="img">
+
+                <img src="cedula.png" alt="Cedula">
+
+                    <br><br>
+
+                    <a href="cedula.pdf.pdf" download class="botonDescarga" onclick="sonar()">
+                        📄 Descargar PDF
+                </a>
+
+</div>
+    
+        </div>
+
+        <div id="academica" class="info">
+            <p class="tituloseccion">Formación académica</p>
+            <p class="tituloinfo">Preescolar:</p>
+            <p class="infoInfo">Institución educativa Policarpa Salavarrieta, sede Antonia Santos (Quimbaya-Quindio)</p><br>
+            <p class="tituloinfo">Primaria:</p>
+            <p class="infoInfo">Institución educativa Policarpa Salavarrieta, sede Antonia Santos (Quimbaya-Quindio)</p><br>
+            <p class="tituloinfo">Bachillerato:</p>
+            <p class="infoInfo">Centro educativo María Eugenia Velandia (Arjona Bolívar)</p><br>
+            <p class="tituloinfo">Superior:</p>
+            <p class="infoInfo">Ingeniería de software, universidad de Cartagena (en curso)</p><br>
+            
+
+                <img src="DiplomaBachiller.png" alt="diploma">
+
+                    <br><br>
+
+                    <a href="diploma.pdf.pdf" download class="botonDescarga">
+                        📄 Descargar PDF
+                </a>
+
+    </div>
+
+         </div>
+    
+        
+
+        <div id="laboral" class="info">
+            <p class="tituloseccion">Experiencia laboral</p>
+            <p class="infoInfo"> - Recepcionista motel el cielo, 6 meses</p><br>
+            <p class="infoInfo"> - Atención al cliente supermercado los bazurticos, 1 año</p><br>
+            <p class="infoInfo"> - Atención al cliente suministros Shanny, 1 año</p><br>
+            <p class="infoInfo"> - Administración distribuidora LyH, 5 años</p><br>
+            <p class="infoInfo"> - Atención al cliente remates los paisas, 1 año</p><br>
+            <p class="infoInfo"> - Administración distribuidora los paisas, 2 años</p><br>
+
+        </div>
+
+        <div id="habilidad" class="info">
+            <p class="tituloseccion">Habilidades</p>
+            <p class="infoInfo"> - Excelente atención y servicio al cliente</p><br>
+            <p class="infoInfo"> - Experiencia en administración de negocios</p><br>
+            <p class="infoInfo"> - Manejo de caja e inventario</p><br>
+            <p class="infoInfo"> - Organización y gestión de ventas</p><br>
+            <p class="infoInfo"> - Trabajo en equipo y comunicación efectiva</p><br>
+            <p class="infoInfo"> - Resolución de problemas</p><br>
+
+        </div>
+
+
+        <div id="antecedents" class="info">
+            <p class="tituloseccion">Antecedentes</p>
+            <div class="img">
+
+                <img src="A policia.png" alt="Policia">
+
+                    <br><br>
+
+                    <a href="policia.pdf.pdf" download class="botonDescarga">
+                        📄 Descargar PDF
+                </a>
+                 </div>
+
+              <div class="img">
+
+                <img src="a contraloria.png" alt="contraloria">
+
+                    <br><br>
+
+                    <a href="contraloria.pdf.pdf" download class="botonDescarga">
+                        📄 Descargar PDF
+                </a>
+                 </div>
+
+             <div class="img">
+
+                <img src="a procuradoria.png" alt="procuradoria">
+
+                    <br><br>
+
+                    <a href="procuradoria.pdf.pdf" download class="botonDescarga">
+                        📄 Descargar PDF
+                </a> 
+            </div>
+
+        </div> 
+
+     </div>
+
+
+        <div id="referens" class="info">
+            <p class="tituloseccion">Referencia personal</p>
+           <p class="tituloinfo">Nombre:</p>
+            <p class="infoInfo">Henry Ciro Lopez</p><br>
+            <p class="tituloinfo">Ocupación:</p>
+            <p class="infoInfo">Independiente</p><br>
+            <p class="tituloinfo">Teléfono:</p>
+            <p class="infoInfo">310 838 5602</p><br>
+
+            <p class="tituloseccion">Referencia laboral</p>
+           <p class="tituloinfo">Nombre:</p>
+            <p class="infoInfo">Juan David Ciro Villegas</p><br>
+            <p class="tituloinfo">Ocupación:</p>
+            <p class="infoInfo">Administrador de empresas</p><br>
+            <p class="tituloinfo">Teléfono:</p>
+            <p class="infoInfo">313 565 4680</p><br>
+            
+        </div>
+    </div>
+
+       
+
+</body>
+</html>
