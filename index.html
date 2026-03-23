@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
+    <a class="encabezado" id="botonE1" href="https://fraveproject.github.io/hub-web/"><button  class="boton">Inicio</button></a>
 <script>
 
 function mostrar(id){
@@ -195,7 +195,49 @@ if(seccion.style.display === "block"){
         </div>
     </div>
 
-       
+     <div class="contenedorFormulario">
+       <form action="">
+        <fieldset>
+            <legend>Cantácteme</legend>
+        <label for="name">Nombre</label>
+        <input id="name" type="text" placeholder="Ingrese su nombre">
+        <br>
+        <label for="mensaje">Mensaje</label>
+        <input id="mensaje" type="text" placeholder="Ingrese su mensaje">
+        <br>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Ingrese su email">
+        <br><br>
+
+     <button type="submit">Enviar mensaje</button>
+
+        </fieldset>
+       </form>
+        </div>
+       <div id="mensajeExito" class="mensajeExito">
+<div class="cuadroMensaje">
+✅ Mensaje enviado correctamente
+</div>
+</div>
+
+<script>
+
+const formulario = document.querySelector("form");
+const mensaje = document.getElementById("mensajeExito");
+
+formulario.addEventListener("submit", function(e){
+
+e.preventDefault(); // evita que se recargue la página
+
+mensaje.style.display = "block";
+
+setTimeout(function(){
+mensaje.style.display = "none";
+},3000);
+
+});
+
+</script>
 
 </body>
 </html>
